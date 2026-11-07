@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>苏科版初中物理公式讲义｜八年级上册与下册</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #18333c;
+  --muted: #496069;
+  --line: #d6e3e4;
+  --teal: #00655e;
+  --aqua: #eaf6f3;
+  --paper: #ffffff;
+  --warm: #fff4e6;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1rem; }
+body { margin: 0; color: var(--ink); background: #f3f7f7; font: 16px/1.75 system-ui, "Microsoft YaHei", "PingFang SC", sans-serif; }
+header.hero { background: #123b42; color: #fff; padding: 3.5rem 1.25rem 3rem; border-bottom: 6px solid #77d5bc; }
+.wrap { width: min(100%, 940px); margin-inline: auto; }
+.overline { margin: 0 0 .55rem; color: #99ead3; font-size: .88rem; letter-spacing: .14em; font-weight: 700; }
+h1, h2, h3, p { margin: 0; }
+h1 { font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.15; letter-spacing: .02em; }
+.subtitle { margin-top: 1rem; max-width: 62ch; color: #e1f2f2; }
+.hero a { display: inline-block; margin-top: 1.15rem; margin-right: .65rem; color: white; font-weight: 700; text-decoration-color: #77d5bc; text-underline-offset: .22rem; }
+main.wrap { padding: 1.6rem 1.25rem 3.5rem; }
+h2 { font-size: clamp(1.32rem, 4vw, 1.85rem); line-height: 1.35; }
+h3 { font-size: 1.18rem; line-height: 1.35; }
+a { color: var(--teal); text-underline-offset: .2em; }
+a:focus-visible, summary:focus-visible, button:focus-visible { outline: 3px solid #a75d27; outline-offset: 3px; }
+button { color: var(--teal); background: var(--paper); font: inherit; font-size: .88rem; font-weight: 700; padding: .3rem .8rem; border: 1px solid var(--line); border-radius: .5rem; cursor: pointer; }
+.panel { background: var(--paper); border: 1px solid var(--line); border-radius: .85rem; margin-bottom: 1.25rem; padding: clamp(1rem, 3vw, 1.5rem); }
+.panel > p { margin-top: .65rem; }
+.panel-head { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: space-between; align-items: center; }
+.index { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: .9rem; }
+.index h3 { font-size: .98rem; color: var(--muted); }
+.index ul { margin: .45rem 0 0; padding: 0; list-style: none; }
+.index a { display: block; padding: .25rem 0; }
+.index a span { display: inline-block; width: 2.2em; font-variant-numeric: tabular-nums; color: var(--muted); }
+.quick { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; margin: .85rem 0 0; padding: 0; list-style: none; }
+.quick a { display: block; height: 100%; background: var(--aqua); border-radius: .5rem; padding: .52rem .65rem; text-decoration: none; }
+.quick a:hover { text-decoration: underline; }
+.quick b { display: block; font-size: .86rem; }
+.quick span { color: var(--ink); }
+.volume { display: flex; align-items: center; gap: .7rem; color: var(--teal); margin: 2.4rem 0 1rem; letter-spacing: .07em; font-weight: 700; }
+.volume::after { content: ""; height: 1px; flex: 1; background: var(--line); }
+.chapter { margin-bottom: 1.9rem; }
+.chapter-head { margin: 0 0 .8rem; }
+.chapter-head h2 { display: flex; align-items: baseline; gap: .55rem; }
+.chapter-head p { margin-top: .28rem; color: var(--muted); }
+.number { color: var(--teal); font-size: .83em; font-variant-numeric: tabular-nums; }
+.card { padding: clamp(.85rem, 3vw, 1.3rem); background: var(--paper); border: 1px solid var(--line); border-radius: .75rem; margin: 0 0 .8rem; }
+.card-heading { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: .42rem 1rem; }
+.badge { padding: .1rem .58rem; border-radius: 1rem; background: #eff3f5; color: #3f5660; font-size: .75rem; font-weight: 700; white-space: nowrap; }
+.badge.core { background: #d8f0e9; color: #005950; }
+.badge.derived { background: var(--warm); color: #783b15; }
+.formula { margin: .75rem 0 .8rem; padding: .58rem .85rem; border-inline-start: 4px solid #268879; border-radius: .3rem; background: var(--aqua); font-size: clamp(1rem, 3vw, 1.23rem); font-weight: 600; line-height: 1.72; overflow-wrap: anywhere; }
+i { font-family: "Cambria Math", Cambria, Georgia, serif; }
+sub, sup { font-size: .68em; line-height: 0; }
+.line { margin-top: .42rem; }
+.line strong { color: var(--teal); }
+.example { margin-top: .76rem; border: 1px solid #f0dec4; background: var(--warm); padding: .55rem .75rem; border-radius: .48rem; }
+.example strong { color: #783b15; }
+figure { margin: .8rem 0 0; padding: .45rem .65rem .6rem; background: #f5f9f9; border-radius: .5rem; }
+figure svg { width: min(100%, 455px); height: auto; display: block; margin: auto; }
+figure svg text { fill: var(--ink); font-family: inherit; font-size: 18px; }
+figure svg .svg-angle { fill: #8a4015; font-family: Georgia, serif; font-style: italic; font-size: 22px; }
+figcaption { text-align: center; font-size: .88rem; color: var(--muted); }
+table { width: 100%; border-collapse: collapse; margin: .55rem 0; font-size: .93rem; }
+caption { text-align: left; font-weight: 700; margin: .15rem 0 .35rem; }
+td, th { text-align: left; vertical-align: top; padding: .35rem .52rem; border-bottom: 1px solid var(--line); }
+th { background: var(--aqua); }
+td:first-child { font-weight: 600; }
+details { border-top: 1px solid var(--line); padding: .58rem 0; }
+details:first-of-type { margin-top: .65rem; }
+details p { padding: .4rem .65rem; background: var(--aqua); border-radius: .4rem; margin-top: .35rem; }
+summary { cursor: pointer; font-weight: 600; }
+.sources { font-size: .9rem; }
+.sources ul { margin-bottom: 0; padding-left: 1.3rem; }
+.back { font-size: .9rem; }
+@media (max-width: 570px) {
+  header.hero { padding: 2.4rem 1.05rem 1.9rem; }
+  main.wrap { padding-inline: .82rem; }
+  .quick { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .index { gap: .5rem; font-size: .88rem; }
+  .index a span { width: 1.55em; }
+  .lens td, .lens th { padding: .3rem .22rem; font-size: .83rem; }
+}
+@media print {
+  @page { margin: 14mm; }
+  body { background: white; color: black; font-size: 10.5pt; line-height: 1.45; }
+  header.hero { padding: 0 0 10pt; color: black; background: white; border-color: #888; }
+  .overline, .subtitle, a, .chapter-head p { color: black; }
+  main.wrap { padding: 10pt 0 0; }
+  h1 { font-size: 25pt; }
+  h2 { font-size: 15pt; }
+  .volume { margin-top: 14pt; }
+  .card, .panel, figure { background: white; }
+  .formula, .example { background: white; }
+  .card, .chapter-head, figure, table, details { break-inside: avoid; }
+  .volume, .chapter-head { break-after: avoid; }
+  .hero a, button, .back { display: none; }
+  details:not([open]) > *:not(summary) { display: block; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="overline">苏科版初中物理 · 八年级上册与下册</p>
+    <h1>物理公式讲义</h1>
+    <p class="subtitle">复习范围为进入九年级上册前学过的内容。每张卡片都讲清符号、单位和适用条件，再用一道小题演示代入过程。</p>
+    <a href="#contents">看章节目录</a><a href="#units">查单位换算</a><a href="#practice">做自测题</a>
+  </div>
+</header>
+<main class="wrap">
+<nav class="panel" id="contents" aria-labelledby="contents-title">
+<div class="panel-head"><h2 id="contents-title">章节目录</h2>
+<button type="button" id="print" hidden>打印讲义</button></div>
+<div class="index">
+<div><h3>八年级上册</h3><ul>
+<li><a href="#chapter-01"><span>01</span>声现象</a></li>
+<li><a href="#chapter-02"><span>02</span>光现象</a></li>
+<li><a href="#chapter-03"><span>03</span>光的折射 透镜</a></li>
+<li><a href="#chapter-04"><span>04</span>物态变化</a></li>
+<li><a href="#chapter-05"><span>05</span>物体的运动</a></li>
+</ul></div>
+<div><h3>八年级下册</h3><ul>
+<li><a href="#chapter-06"><span>06</span>物质的物理属性</a></li>
+<li><a href="#chapter-07"><span>07</span>力</a></li>
+<li><a href="#chapter-08"><span>08</span>力与运动</a></li>
+<li><a href="#chapter-09"><span>09</span>压强和浮力</a></li>
+<li><a href="#chapter-10"><span>10</span>从粒子到宇宙</a></li>
+</ul></div>
+</div></nav>
+<section class="panel" aria-labelledby="quick-title">
+  <h2 id="quick-title">核心公式速查</h2>
+  <ul class="quick"><li><a href="#speed"><b>速度</b><span>v = s/t</span></a></li>
+<li><a href="#average-speed"><b>全程平均速度</b><span>v<sub>平均</sub> = s<sub>总</sub>/t<sub>总</sub></span></a></li>
+<li><a href="#density"><b>密度</b><span>ρ = m/V</span></a></li>
+<li><a href="#gravity"><b>重力</b><span>G = mg</span></a></li>
+<li><a href="#pressure"><b>压强</b><span>p = F/S</span></a></li>
+<li><a href="#archimedes"><b>浮力</b><span>F<sub>浮</sub> = ρ<sub>液</sub>gV<sub>排</sub></span></a></li></ul>
+  <p>做题时先圈出要求的量，再把已知量和单位写在旁边。选公式前检查对象和条件，算完后带上单位。</p>
+</section>
+<div class="volume">八年级上册</div>
+<section class="chapter" id="chapter-01" aria-labelledby="heading-01"><div class="chapter-head"><h2 id="heading-01"><span class="number">01</span>声现象</h2><p>声音在传播中走了多远？先判断题目给的是单程时间还是往返时间。</p></div>
+<article class="card" id="sound-frequency">
+<div class="card-heading"><h3>频率与音调</h3><span class="badge rule">定量规律</span></div>
+<div class="formula"><i>f</i> = <i>n</i>/<i>t</i></div>
+<p class="line"><strong>怎么理解　</strong>频率表示每秒振动多少次。<i>n</i> 是振动次数，<i>t</i> 是所用时间（s），<i>f</i> 的单位是赫兹（Hz），1 Hz 表示每秒振动 1 次。</p>
+<p class="line"><strong>什么时候用　</strong>通常人耳的听觉频率范围约为 20～20 000 Hz。低于 20 Hz 为次声，高于 20 000 Hz 为超声。振动越快，音调越高。响度还和振幅、距离等因素有关。</p>
+<p class="example"><strong>例题　</strong>物体在 2 s 内振动 600 次，<i>f</i> = 600 ÷ 2 = <b>300 Hz</b>。</p>
+</article>
+<article class="card" id="echo">
+<div class="card-heading"><h3>声速与回声测距</h3><span class="badge derived">常用推导</span></div>
+<div class="formula"><i>s</i> = <i>v</i><i>t</i>　　<i>d</i> = <i>v</i><i>t</i>/2（往返）</div>
+<p class="line"><strong>怎么理解　</strong><i>v</i> 是声音在题设介质中的传播速度（m/s），<i>s</i> 是声音实际走过的路程（m）。<i>d</i> 是声源到反射面的单程距离（m）。</p>
+<p class="line"><strong>什么时候用　</strong>发射与接收位置相同且静止、声沿原路返回时，回声时间包含两个单程。常温空气中的声速在习题中常近似取 340 m/s，题目另给数值时按题意。声呐在水中测距应代入水中的声速。</p>
+<p class="example"><strong>例题　</strong>站在山崖前喊话，1.2 s 后听到回声。声走了 340 × 1.2 = 408 m，人距山崖 <b>204 m</b>。</p>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+<section class="chapter" id="chapter-02" aria-labelledby="heading-02"><div class="chapter-head"><h2 id="heading-02"><span class="number">02</span>光现象</h2><p>传播时间、反射角、平面镜像距是本章最常见的定量关系。</p></div>
+<article class="card" id="light-speed">
+<div class="card-heading"><h3>光速、距离与时间</h3><span class="badge derived">常用推导</span></div>
+<div class="formula"><i>c</i> ≈ 3.0 × 10<sup>8</sup> m/s　　<i>s</i> = <i>c</i><i>t</i></div>
+<p class="line"><strong>怎么理解　</strong><i>c</i> 是真空中的光速，空气中通常可近似取这个值。<i>t</i> 以秒计，<i>s</i> 是光走过的路程（m）。</p>
+<p class="line"><strong>什么时候用　</strong>在同种介质中按该介质中的光速计算。光信号原路返回时，往返路程是单程的 2 倍。</p>
+<p class="example"><strong>例题　</strong>激光脉冲从地球发出到收到月面回波约用 2.56 s，地月距离约为 3.0 × 10<sup>8</sup> × 2.56 ÷ 2 = <b>3.84 × 10<sup>8</sup> m</b>。</p>
+</article>
+<article class="card" id="mirror">
+<div class="card-heading"><h3>平面镜成像</h3><span class="badge rule">定量规律</span></div>
+<div class="formula"><i>d</i><sub>像</sub> = <i>d</i><sub>物</sub>　　<i>H</i><sub>像</sub> = <i>H</i><sub>物</sub></div>
+<p class="line"><strong>怎么理解　</strong><i>d</i> 是像或物到镜面的垂直距离，<i>H</i> 是高度，比较时单位一致。像与物关于镜面对称，成正立、等大的虚像。</p>
+<p class="line"><strong>什么时候用　</strong>物和自己的像相距 2<i>d</i><sub>物</sub>。人向镜子走近时，像也从镜后等量靠近镜面，像的实际大小保持不变。</p>
+<p class="example"><strong>例题　</strong>人站在镜前 1.5 m 处，像在镜后 <b>1.5 m</b>，人和像相距 <b>3.0 m</b>。</p>
+</article>
+<article class="card" id="reflection">
+<div class="card-heading"><h3>光的反射定律</h3><span class="badge rule">定量规律</span></div>
+<div class="formula"><i>r</i> = <i>i</i>　　<i>i</i> = 90° − 光线与镜面的夹角</div>
+<p class="line"><strong>怎么理解　</strong><i>i</i> 是入射角，<i>r</i> 是反射角，单位都是度（°）。法线是在入射点画出的、垂直于镜面的直线，两个角都从法线量起。</p>
+<p class="line"><strong>什么时候用　</strong>入射角、反射角分别在法线两侧。垂直照到镜面时，入射角和反射角都是 0°。</p>
+<p class="example"><strong>例题　</strong>入射光线与镜面夹角为 30°，<i>i</i> = 90° − 30° = 60°，因此 <i>r</i> = <b>60°</b>。</p>
+
+<figure>
+<svg viewBox="0 0 470 195" role="img" aria-labelledby="reflection-title">
+  <title id="reflection-title">反射角和入射角都从法线量起</title>
+  <defs><marker id="arrow-ref" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#006f67"/></marker></defs>
+  <path d="M60 150 H410" stroke="#5c7780" stroke-width="4"/>
+  <path d="M235 32 V150" stroke="#5c7780" stroke-width="2" stroke-dasharray="6 5"/>
+  <path d="M135 50 L178 93 L235 150 M235 150 L292 93 L335 50" fill="none" stroke="#006f67" stroke-width="3" marker-mid="url(#arrow-ref)"/>
+  <path d="M207 122 A40 40 0 0 1 235 110 M235 110 A40 40 0 0 1 263 122" fill="none" stroke="#9a4d16" stroke-width="2"/>
+  <text x="235" y="23" text-anchor="middle">法线</text>
+  <text x="103" y="40" text-anchor="middle">入射光线</text>
+  <text x="367" y="40" text-anchor="middle">反射光线</text>
+  <text x="212" y="105" class="svg-angle">i</text>
+  <text x="252" y="105" class="svg-angle">r</text>
+  <text x="235" y="178" text-anchor="middle">镜面</text>
+</svg>
+<figcaption>图中虚线是法线。橙色圆弧标出了两个角的位置。</figcaption>
+</figure>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+<section class="chapter" id="chapter-03" aria-labelledby="heading-03"><div class="chapter-head"><h2 id="heading-03"><span class="number">03</span>光的折射 透镜</h2><p>先画法线判断偏折，再比较物距和焦距判断像的性质。</p></div>
+<article class="card" id="refraction">
+<div class="card-heading"><h3>折射角的大小关系</h3><span class="badge rule">定量规律</span></div>
+<div class="formula">空气 → 水或玻璃：<i>r</i> &lt; <i>i</i>（斜射）<br>水或玻璃 → 空气：<i>r</i> &gt; <i>i</i>（斜射且有折射光）</div>
+<p class="line"><strong>怎么理解　</strong>这里的 <i>r</i> 表示折射角，<i>i</i> 表示入射角，两者都相对法线测量。垂直入射且发生透射时，两角均为 0°，传播方向不偏折。</p>
+<p class="line"><strong>什么时候用　</strong>在空气与水或玻璃的常见题型中，水或玻璃里的那条光线与法线的夹角较小。</p>
+<p class="example"><strong>例题　</strong>光从空气斜射到水中，<i>i</i> = 40°，<i>r</i> 可能是 <b>30°</b>。若让光沿原折射光路从水中返回，光路可逆。</p>
+</article>
+<article class="card" id="lens">
+<div class="card-heading"><h3>凸透镜成像</h3><span class="badge rule">定量规律</span></div>
+<div class="formula">物距 <i>u</i> 与焦距 <i>f</i> 比较　→　判断像的性质</div>
+<p class="line"><strong>怎么理解　</strong><i>u</i> 是物体到光心的距离，<i>v</i> 是像到光心的距离，<i>f</i> 是焦点到光心的距离。三个距离用同一单位。实像可以用光屏承接，虚像可透过透镜观察。</p>
+
+<table class="lens">
+  <caption>凸透镜成像对照表</caption>
+  <thead><tr><th scope="col">物距</th><th scope="col">像的性质</th><th scope="col">像的位置</th><th scope="col">常见应用</th></tr></thead>
+  <tbody>
+    <tr><td><i>u</i> &gt; 2<i>f</i></td><td>倒立、缩小实像</td><td><i>f</i> &lt; <i>v</i> &lt; 2<i>f</i>，异侧</td><td>照相机</td></tr>
+    <tr><td><i>u</i> = 2<i>f</i></td><td>倒立、等大实像</td><td><i>v</i> = 2<i>f</i>，异侧</td><td>分界位置</td></tr>
+    <tr><td><i>f</i> &lt; <i>u</i> &lt; 2<i>f</i></td><td>倒立、放大实像</td><td><i>v</i> &gt; 2<i>f</i>，异侧</td><td>投影仪</td></tr>
+    <tr><td><i>u</i> = <i>f</i></td><td>出射光平行</td><td>有限距离处不成像</td><td>实像与虚像分界</td></tr>
+    <tr><td><i>u</i> &lt; <i>f</i></td><td>正立、放大虚像</td><td>与物体在透镜同侧</td><td>放大镜</td></tr>
+  </tbody>
+</table>
+<p class="line"><strong>什么时候用　</strong><i>u</i> &gt; <i>f</i> 且成实像时，物体向透镜靠近，像远离透镜并变大。找焦距时，让平行于主光轴的光照进凸透镜，焦点到光心的距离就是焦距。</p>
+<p class="example"><strong>例题　</strong><i>f</i> = 10 cm，<i>u</i> = 15 cm，满足 <i>f</i> &lt; <i>u</i> &lt; 2<i>f</i>，成<b>倒立、放大的实像</b>，像距大于 20 cm。</p>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+<section class="chapter" id="chapter-04" aria-labelledby="heading-04"><div class="chapter-head"><h2 id="heading-04"><span class="number">04</span>物态变化</h2><p>计算题主要涉及读温度和求温差，物态变化用吸放热和图像判断。</p></div>
+<article class="card" id="temperature">
+<div class="card-heading"><h3>摄氏温度与温差</h3><span class="badge rule">定量规律</span></div>
+<div class="formula">Δ<i>T</i> = <i>T</i><sub>末</sub> − <i>T</i><sub>初</sub></div>
+<p class="line"><strong>怎么理解　</strong>Δ 读作“德尔塔”，表示变化量。<i>T</i><sub>末</sub>、<i>T</i><sub>初</sub> 分别是末温和初温（℃）。Δ<i>T</i> 为正表示升温，为负表示降温，问“降低了多少”时填变化量的大小。</p>
+<p class="line"><strong>什么时候用　</strong>标准大气压下，冰水混合物的温度为 0 ℃，沸水为 100 ℃。沸点会随气压变化。晶体熔化时持续吸热且温度保持在熔点，液体沸腾时持续吸热且温度保持在相应沸点。</p>
+<p class="example"><strong>例题　</strong>从 −5 ℃ 升到 3 ℃，Δ<i>T</i> = 3 − (−5) = <b>8 ℃</b>。</p>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+<section class="chapter" id="chapter-05" aria-labelledby="heading-05"><div class="chapter-head"><h2 id="heading-05"><span class="number">05</span>物体的运动</h2><p>每个速度都要和同一段路程、同一段时间配对。</p></div>
+<article class="card" id="measurement">
+<div class="card-heading"><h3>长度与时间的测量</h3><span class="badge derived">常用推导</span></div>
+<div class="formula"><i>L</i> = <i>L</i><sub>末</sub> − <i>L</i><sub>初</sub>　　Δ<i>t</i> = <i>t</i><sub>末</sub> − <i>t</i><sub>初</sub></div>
+<p class="line"><strong>怎么理解　</strong>用刻度尺量长度 <i>L</i> 时，用右端读数减左端读数。用计时器求时间间隔 Δ<i>t</i> 时，用终点时刻减起点时刻。</p>
+<p class="line"><strong>什么时候用　</strong>同一量反复测量，可取算术平均值（各有效测量值的和 ÷ 次数）来减小偶然误差。用累积法测一张纸的厚度，可用一叠相同纸的总厚度 ÷ 张数。</p>
+<p class="example"><strong>例题　</strong>纸带左端在 2.10 cm，右端在 8.35 cm，纸带长 <b>6.25 cm</b>。200 张纸叠厚 20.0 mm，单张厚约 <b>0.100 mm</b>。</p>
+</article>
+<article class="card" id="speed">
+<div class="card-heading"><h3>速度与匀速直线运动</h3><span class="badge core">核心公式</span></div>
+<div class="formula"><i>v</i> = <i>s</i>/<i>t</i>　　<i>s</i> = <i>v</i><i>t</i>　　<i>t</i> = <i>s</i>/<i>v</i></div>
+<p class="line"><strong>怎么理解　</strong><i>v</i> 是速度（m/s），<i>s</i> 是路程（m），<i>t</i> 是所用时间（s）。速度表示单位时间内走过的路程。</p>
+<p class="line"><strong>什么时候用　</strong>匀速直线运动中，各段速度相同，路程与时间成正比。1 m/s = 3.6 km/h，由 m/s 换成 km/h 乘 3.6，反过来除以 3.6。</p>
+<p class="example"><strong>例题　</strong>小车做匀速直线运动，5 s 走了 15 m，<i>v</i> = <b>3 m/s</b> = <b>10.8 km/h</b>。</p>
+</article>
+<article class="card" id="average-speed">
+<div class="card-heading"><h3>全程平均速度</h3><span class="badge core">核心公式</span></div>
+<div class="formula"><i>v</i><sub>平均</sub> = <i>s</i><sub>总</sub>/<i>t</i><sub>总</sub> = (<i>s</i><sub>1</sub> + <i>s</i><sub>2</sub>)/(<i>t</i><sub>1</sub> + <i>t</i><sub>2</sub>)</div>
+<p class="line"><strong>怎么理解　</strong>用所研究时段的总路程除以该时段的总时间。若途中停留也计在所问时段内，就把停留时间加进分母。</p>
+<p class="line"><strong>什么时候用　</strong>先分段求路程或时间，再合计。只有各段所用时间相等时，才能直接把各段速度取算术平均值。</p>
+<p class="example"><strong>例题　</strong>前 100 m 用 20 s，后 100 m 用 30 s，全程平均速度为 200 ÷ 50 = <b>4 m/s</b>。</p>
+</article>
+<article class="card" id="relative-speed">
+<div class="card-heading"><h3>相遇与追及</h3><span class="badge derived">常用推导</span></div>
+<div class="formula">相向接近：<i>d</i> = (<i>v</i><sub>1</sub> + <i>v</i><sub>2</sub>)<i>t</i><br>同向追及：<i>d</i> = (<i>v</i><sub>快</sub> − <i>v</i><sub>慢</sub>)<i>t</i></div>
+<p class="line"><strong>怎么理解　</strong><i>d</i> 为初始间距，<i>t</i> 为相遇或追上所需时间，两速度以同一参照物（如地面）为准。</p>
+<p class="line"><strong>什么时候用　</strong>适用于同一直线上同时开始计时、各自匀速运动的情形。同向追及时，快的物体起初在后。</p>
+<p class="example"><strong>例题　</strong>两人相距 60 m，以 2 m/s 和 3 m/s 相向匀速走来，<i>t</i> = 60 ÷ (2 + 3) = <b>12 s</b>。</p>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+<div class="volume">八年级下册</div>
+<section class="chapter" id="chapter-06" aria-labelledby="heading-06"><div class="chapter-head"><h2 id="heading-06"><span class="number">06</span>物质的物理属性</h2><p>先明确质量和体积是不是同一物体、同一部分的量。</p></div>
+<article class="card" id="mass-volume">
+<div class="card-heading"><h3>用差值测质量和体积</h3><span class="badge derived">常用推导</span></div>
+<div class="formula"><i>m</i><sub>液</sub> = <i>m</i><sub>容器和液</sub> − <i>m</i><sub>空容器</sub><br><i>V</i><sub>物</sub> = <i>V</i><sub>浸没后</sub> − <i>V</i><sub>浸没前</sub></div>
+<p class="line"><strong>怎么理解　</strong>天平称得的是秤上所有物体的总质量，用差值可得液体质量。排水法用量筒液面上升前后的读数差求体积，1 mL = 1 cm³。</p>
+<p class="line"><strong>什么时候用　</strong>排水法的基本模型要求物体完全浸没、无气泡、不吸水、不溶于水且液体未溢出。测液体密度时也可称“容器和液体倒出前、倒出后”的质量差，再用量筒量同一份倒出的液体。</p>
+<p class="example"><strong>例题　</strong>空杯 30 g，装液后 90 g，液体质量 <b>60 g</b>。石块浸没使量筒读数由 40 mL 升至 65 mL，石块体积 <b>25 cm³</b>。</p>
+</article>
+<article class="card" id="density">
+<div class="card-heading"><h3>密度及其变形</h3><span class="badge core">核心公式</span></div>
+<div class="formula"><i>ρ</i> = <i>m</i>/<i>V</i>　　<i>m</i> = <i>ρ</i><i>V</i>　　<i>V</i> = <i>m</i>/<i>ρ</i></div>
+<p class="line"><strong>怎么理解　</strong><i>ρ</i>（希腊字母 rho）表示密度，<i>m</i> 是质量，<i>V</i> 是体积。每立方厘米物质有多少克，可以用 g/cm³ 表示。国际单位为 kg/m³。</p>
+<p class="line"><strong>什么时候用　</strong>kg 配 m³，g 配 cm³。1 g/cm³ = 10<sup>3</sup> kg/m³。水的密度通常取 1.0 g/cm³，即 1.0 × 10<sup>3</sup> kg/m³。同种均匀物质在状态、温度等条件相同时，切成小块，密度不变。</p>
+<p class="example"><strong>例题　</strong>金属块质量 54 g，体积 20 cm³，<i>ρ</i> = 54 ÷ 20 = <b>2.7 g/cm³</b> = <b>2.7 × 10<sup>3</sup> kg/m³</b>。</p>
+</article>
+<article class="card" id="mean-density">
+<div class="card-heading"><h3>平均密度与空心判断</h3><span class="badge derived">常用推导</span></div>
+<div class="formula"><i>ρ</i><sub>平均</sub> = <i>m</i><sub>总</sub>/<i>V</i><sub>总</sub><br><i>V</i><sub>空</sub> = <i>V</i><sub>外</sub> − <i>m</i>/<i>ρ</i><sub>材料</sub></div>
+<p class="line"><strong>怎么理解　</strong><i>V</i><sub>外</sub> 指物体外轮廓包住的总体积，<i>m</i>/<i>ρ</i><sub>材料</sub> 是实际用料的体积，两者相减得到空腔的体积。</p>
+<p class="line"><strong>什么时候用　</strong>用空心公式时，外壳由已知的均匀材料组成，通常忽略空腔内空气的质量。混合物的平均密度用实际总体积计算，题设说明体积可以相加时才直接加各部分体积。</p>
+<p class="example"><strong>例题　</strong>某空心铝球外体积 100 cm³，质量 216 g，铝的密度为 2.7 g/cm³。铝的体积为 80 cm³，空腔体积为 <b>20 cm³</b>。</p>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+<section class="chapter" id="chapter-07" aria-labelledby="heading-07"><div class="chapter-head"><h2 id="heading-07"><span class="number">07</span>力</h2><p>先找受力物体，再判断力的大小和方向。</p></div>
+<article class="card" id="gravity">
+<div class="card-heading"><h3>重力与质量</h3><span class="badge core">核心公式</span></div>
+<div class="formula"><i>G</i> = <i>m</i><i>g</i>　　<i>m</i> = <i>G</i>/<i>g</i></div>
+<p class="line"><strong>怎么理解　</strong><i>G</i> 是重力（N），方向竖直向下。<i>m</i> 是质量（kg），<i>g</i> 通常取 9.8 N/kg，有些习题明确要求取 10 N/kg。9.8 N/kg 表示在该处 1 kg 的物体受重力约 9.8 N。</p>
+<p class="line"><strong>什么时候用　</strong>先把质量换成 kg。<i>G</i> 和 <i>m</i> 是两种不同的量，重力会随所在位置的 <i>g</i> 变化。</p>
+<p class="example"><strong>例题　</strong>500 g = 0.500 kg，取 <i>g</i> = 10 N/kg，<i>G</i> = 0.500 × 10 = <b>5 N</b>。</p>
+</article>
+<article class="card" id="spring">
+<div class="card-heading"><h3>弹簧伸长量与测力</h3><span class="badge rule">定量规律</span></div>
+<div class="formula">Δ<i>L</i> = <i>L</i> − <i>L</i><sub>0</sub>　　<i>F</i><sub>2</sub>/<i>F</i><sub>1</sub> = Δ<i>L</i><sub>2</sub>/Δ<i>L</i><sub>1</sub></div>
+<p class="line"><strong>怎么理解　</strong><i>L</i><sub>0</sub> 是弹簧原长，<i>L</i> 是受拉后的长度。对同一根在正常测量范围内的弹簧，拉力 <i>F</i>（N）越大，伸长量 Δ<i>L</i> 按比例增大。</p>
+<p class="line"><strong>什么时候用　</strong>比较的是增加的长度。若题目给的是弹簧总长，两次都应先减原长。使用测力计先校零，测量时不超量程。</p>
+<p class="example"><strong>例题　</strong>原长 5 cm，拉力 2 N 时总长 6 cm。若仍在量程内，4 N 时伸长 2 cm，总长 <b>7 cm</b>。</p>
+</article>
+<article class="card" id="interaction">
+<div class="card-heading"><h3>相互作用力</h3><span class="badge rule">定量规律</span></div>
+<div class="formula"><i>F</i><sub>甲对乙</sub> = <i>F</i><sub>乙对甲</sub>（大小）</div>
+<p class="line"><strong>怎么理解　</strong>两个力方向相反，分别作用在两个物体上，同时产生、同时消失。计算每个物体受的合力时，只画作用在该物体上的力。</p>
+<p class="line"><strong>什么时候用　</strong>桌子给书的支持力与书给桌子的压力是一对相互作用力。书受到的重力与桌子给书的支持力，在书只受这两个力且静止时是一对平衡力。</p>
+<p class="example"><strong>例题　</strong>小明对墙的推力是 30 N，墙对小明的推力大小也是 <b>30 N</b>，方向相反。</p>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+<section class="chapter" id="chapter-08" aria-labelledby="heading-08"><div class="chapter-head"><h2 id="heading-08"><span class="number">08</span>力与运动</h2><p>静止和匀速直线运动都对应受力平衡。先确定研究对象。</p></div>
+<article class="card" id="balance">
+<div class="card-heading"><h3>二力平衡与摩擦力求法</h3><span class="badge rule">定量规律</span></div>
+<div class="formula"><i>F</i><sub>1</sub> = <i>F</i><sub>2</sub>（大小）　　<i>F</i><sub>合</sub> = 0</div>
+<p class="line"><strong>怎么理解　</strong>只有两个力作用在同一物体上，要互相平衡，这两个力须等大、反向、共线。物体静止或做匀速直线运动时，所受合力为零。</p>
+<p class="line"><strong>什么时候用　</strong>水平匀速拉动木块，若水平方向只受拉力和滑动摩擦力，两者大小相等。静止木块在水平方向只受推力和静摩擦力时，两者也等大。</p>
+<p class="example"><strong>例题　</strong>木块在水平面上被水平拉着匀速前进，测力计示数为 3 N，滑动摩擦力为 <b>3 N</b>，方向与木块相对地面的运动方向相反。</p>
+</article>
+<article class="card" id="net-force">
+<div class="card-heading"><h3>同一直线上的合力</h3><span class="badge derived">常用推导</span></div>
+<div class="formula">同向：<i>F</i><sub>合</sub> = <i>F</i><sub>1</sub> + <i>F</i><sub>2</sub><br>反向：<i>F</i><sub>合</sub> = <i>F</i><sub>大</sub> − <i>F</i><sub>小</sub></div>
+<p class="line"><strong>怎么理解　</strong><i>F</i><sub>合</sub> 表示几个力共同作用的效果，单位为 N。同向时合力沿共同方向，反向且大小不等时沿较大的力的方向。</p>
+<p class="line"><strong>什么时候用　</strong>先核对各力作用在同一物体上，再按方向相加或相减。合力方向表示物体速度改变的方向，物体此刻可能仍在往另一边运动。</p>
+<p class="example"><strong>例题　</strong>一物体在水平方向受向右 8 N 和向左 5 N 的力，水平方向的合力为 <b>3 N，向右</b>。</p>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+<section class="chapter" id="chapter-09" aria-labelledby="heading-09"><div class="chapter-head"><h2 id="heading-09"><span class="number">09</span>压强和浮力</h2><p>压强要找受力面积或深度，浮力要找排开液体的体积。</p></div>
+<article class="card" id="pressure">
+<div class="card-heading"><h3>压力、受力面积与压强</h3><span class="badge core">核心公式</span></div>
+<div class="formula"><i>p</i> = <i>F</i>/<i>S</i>　　<i>F</i> = <i>p</i><i>S</i>　　<i>S</i> = <i>F</i>/<i>p</i></div>
+<p class="line"><strong>怎么理解　</strong><i>p</i> 是压强（Pa），<i>F</i> 是垂直于受力面的压力（N），<i>S</i> 是实际受力面积（m²）。1 Pa = 1 N/m²。</p>
+<p class="line"><strong>什么时候用　</strong>水平面上静止的物体，如果竖直方向只受重力和地面支持力，它对水平面的压力大小等于自身重力。多只桌脚着地时，受力面积要把各脚实际接触的面积加起来。<i>F</i> = <i>p</i><i>S</i> 中的 <i>p</i> 是该面的平均压强，压强均匀时取任一点的压强即可。</p>
+<p class="example"><strong>例题　</strong>物体对水平面的压力是 60 N，接触面积为 200 cm² = 0.020 m²，<i>p</i> = 60 ÷ 0.020 = <b>3.0 × 10<sup>3</sup> Pa</b>。</p>
+</article>
+<article class="card" id="liquid-pressure">
+<div class="card-heading"><h3>液体压强与深度</h3><span class="badge derived">常用推导</span></div>
+<div class="formula"><i>p</i><sub>液</sub> = <i>ρ</i><sub>液</sub><i>g</i><i>h</i>　　<i>p</i><sub>总</sub> = <i>p</i><sub>液面</sub> + <i>ρ</i><sub>液</sub><i>g</i><i>h</i></div>
+<p class="line"><strong>怎么理解　</strong><i>ρ</i><sub>液</sub> 是液体密度（kg/m³），<i>h</i> 是从自由液面到所求位置的竖直距离（m）。<i>p</i><sub>液</sub> 是液柱产生的压强（Pa），若题目求总压强，再加上液面上的压强。</p>
+<p class="line"><strong>什么时候用　</strong>适用于密度均匀的静止液体。同种液体在同一深度向各方向压强相等。水平容器底各点同深，求液体对底的压力可先求压强，再乘底面积。</p>
+
+<figure>
+<svg viewBox="0 0 470 198" role="img" aria-labelledby="depth-title">
+  <title id="depth-title">液面到 A 点的竖直距离是深度 h</title>
+  <path d="M106 56 H364 L320 171 H150 Z" fill="#d7f1ed"/>
+  <path d="M92 20 L150 171 H320 L378 20" fill="none" stroke="#5c7780" stroke-width="3"/>
+  <path d="M106 56 H364" stroke="#006f67" stroke-width="3"/>
+  <path d="M238 56 V125 H296" stroke="#9a4d16" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+  <path d="M232 56 H244 M232 125 H244" stroke="#9a4d16" stroke-width="2"/>
+  <circle cx="296" cy="125" r="4" fill="#006f67"/>
+  <text x="250" y="45">自由液面</text>
+  <text x="219" y="97" class="svg-angle">h</text>
+  <text x="305" y="131">A</text>
+</svg>
+<figcaption>从液面竖直向下量到 A 点所在的高度，得到 A 点的深度。</figcaption>
+</figure>
+<p class="example"><strong>例题　</strong>水面下 0.30 m 处，取 <i>g</i> = 10 N/kg，<i>p</i><sub>液</sub> = 1.0 × 10<sup>3</sup> × 10 × 0.30 = <b>3.0 × 10<sup>3</sup> Pa</b>。</p>
+</article>
+<article class="card" id="communicating-vessels">
+<div class="card-heading"><h3>连通器与柱形物体</h3><span class="badge derived">常用推导</span></div>
+<div class="formula">同种液体的开口连通器：<i>h</i><sub>左液面</sub> = <i>h</i><sub>右液面</sub><br>均匀直柱体对水平面的压强：<i>p</i> = <i>ρ</i><sub>物</sub><i>g</i><i>h</i></div>
+<p class="line"><strong>怎么理解　</strong>开口相通、液面上方气压相同且液体静止时，同种液体的各自由液面等高，高度相对同一基准面量。直柱体公式来自 <i>p</i> = <i>mg</i>/<i>S</i>，将 <i>m</i> = <i>ρ</i><sub>物</sub><i>Sh</i> 代入即可。</p>
+<p class="line"><strong>什么时候用　</strong>直柱体公式要求柱体均匀、竖直放在水平面上、底面完全接触，并且对水平面的压力由自身重力决定。这里 <i>h</i> 是柱体高度（m）。</p>
+<p class="example"><strong>例题　</strong>高 0.20 m 的均匀铝长方体以底面平放，取 <i>ρ</i><sub>铝</sub> = 2.7 × 10<sup>3</sup> kg/m³，<i>g</i> = 10 N/kg，对桌面压强为 <b>5.4 × 10<sup>3</sup> Pa</b>。</p>
+</article>
+<article class="card" id="atmosphere">
+<div class="card-heading"><h3>大气压与水银柱</h3><span class="badge derived">常用推导</span></div>
+<div class="formula"><i>p</i><sub>大气</sub> ≈ <i>ρ</i><sub>汞</sub><i>g</i><i>h</i>　　1 标准大气压 ≈ 1.01 × 10<sup>5</sup> Pa</div>
+<p class="line"><strong>怎么理解　</strong>托里拆利实验中，管顶近似真空，大气压托住水银柱。<i>h</i> 是管内外水银面的竖直高度差（m），<i>ρ</i><sub>汞</sub> 约为 13.6 × 10<sup>3</sup> kg/m³。</p>
+<p class="line"><strong>什么时候用　</strong>一个标准大气压约相当于 760 mm 高的水银柱。实际气压随海拔、天气等变化。气体压强通常靠测量或按题设模型求解。</p>
+<p class="example"><strong>例题　</strong><i>h</i> = 760 mm = 0.760 m，<i>g</i> 取 9.8 N/kg，计算得 <b>约 1.01 × 10<sup>5</sup> Pa</b>。</p>
+</article>
+<article class="card" id="archimedes">
+<div class="card-heading"><h3>浮力与阿基米德原理</h3><span class="badge core">核心公式</span></div>
+<div class="formula"><i>F</i><sub>浮</sub> = <i>G</i><sub>排</sub> = <i>m</i><sub>排</sub><i>g</i> = <i>ρ</i><sub>液</sub><i>g</i><i>V</i><sub>排</sub></div>
+<p class="line"><strong>怎么理解　</strong>浮力 <i>F</i><sub>浮</sub> 的单位是 N，方向竖直向上。<i>G</i><sub>排</sub> 是被排开液体的重力。<i>V</i><sub>排</sub> 是排开液体的体积（m³），相当于物体浸入液体部分占据的体积。</p>
+<p class="line"><strong>什么时候用　</strong>完全浸没时 <i>V</i><sub>排</sub> = <i>V</i><sub>物</sub>，部分浸入时只算浸入的部分。同一个刚性物体完全浸没在同种均匀液体中，深度改变，浮力保持不变。气体中也适用，改用气体密度和排开气体的体积。</p>
+<p class="example"><strong>例题　</strong>排开水 200 cm³ = 2.0 × 10<sup>−4</sup> m³，取 <i>g</i> = 10 N/kg，浮力为 <b>2.0 N</b>。</p>
+</article>
+<article class="card" id="buoyancy-methods">
+<div class="card-heading"><h3>称重法与压力差法</h3><span class="badge derived">常用推导</span></div>
+<div class="formula">称重法：<i>F</i><sub>浮</sub> = <i>G</i><sub>物</sub> − <i>F</i><sub>示</sub><br>压力差法：<i>F</i><sub>浮</sub> = <i>F</i><sub>下表面</sub> − <i>F</i><sub>上表面</sub></div>
+<p class="line"><strong>怎么理解　</strong><i>F</i><sub>示</sub> 是物体浸入液体时弹簧测力计的示数（N）。压力差法常用于上下表面水平、侧面竖直、上下表面都与液体接触的物体，下表面受力向上，上表面受力向下。</p>
+<p class="line"><strong>什么时候用　</strong>称重法要求物体静止，竖直方向只受重力、浮力和向上的拉力，常用空气中测得的示数近似作重力。压力差法若上下表面等面积 <i>S</i>，可写为 <i>F</i><sub>浮</sub> = (<i>p</i><sub>下</sub> − <i>p</i><sub>上</sub>)<i>S</i>。</p>
+<p class="example"><strong>例题　</strong>空气中称得 6 N，浸入水中静止时示数 4 N，浮力 <b>2 N</b>。若另一物块下表面受向上压力 9 N，上表面受向下压力 6 N，则浮力 <b>3 N</b>。</p>
+</article>
+<article class="card" id="floating">
+<div class="card-heading"><h3>浮沉条件与漂浮比例</h3><span class="badge rule">定量规律</span></div>
+<div class="formula">漂浮或悬浮：<i>F</i><sub>浮</sub> = <i>G</i><sub>物</sub><br>自由漂浮：<i>V</i><sub>排</sub>/<i>V</i><sub>物</sub> = <i>ρ</i><sub>物平均</sub>/<i>ρ</i><sub>液</sub></div>
+<p class="line"><strong>怎么理解　</strong>自由漂浮是物体静止在液面上，悬浮是物体完全浸没并静止在液体内部。两种情形下若只受浮力和重力，就有两力平衡。漂浮比例来自 <i>ρ</i><sub>液</sub><i>g</i><i>V</i><sub>排</sub> = <i>ρ</i><sub>物平均</sub><i>g</i><i>V</i><sub>物</sub>。</p>
+<p class="line"><strong>什么时候用　</strong>物体完全浸没且由静止释放，若只考虑浮力和重力，<i>F</i><sub>浮</sub> 大于 <i>G</i><sub>物</sub> 时开始上浮，小于时开始下沉，相等时悬浮。完全浸没时可直接比较物体平均密度与液体密度。沉底并受到向上支持力 <i>N</i> 时，若竖直方向只有这三个力，则 <i>F</i><sub>浮</sub> + <i>N</i> = <i>G</i><sub>物</sub>。</p>
+<p class="example"><strong>例题　</strong>木块平均密度为 0.60 g/cm³，漂浮在水面上，浸入的体积占总体积 <b>60%</b>。若木块质量 0.30 kg，取 <i>g</i> = 10 N/kg，浮力为 <b>3.0 N</b>。</p>
+</article>
+<article class="card" id="displacement">
+<div class="card-heading"><h3>轮船排水量</h3><span class="badge derived">常用推导</span></div>
+<div class="formula">满载漂浮：<i>m</i><sub>排</sub> = <i>m</i><sub>船和载荷</sub>　　<i>F</i><sub>浮</sub> = <i>m</i><sub>排</sub><i>g</i></div>
+<p class="line"><strong>怎么理解　</strong>船的排水量指船满载时所排开水的质量，常用吨（t）表示。水的密度改变时，同一条船若载荷不变并保持漂浮，排水质量不变，排水体积会改变。</p>
+<p class="line"><strong>什么时候用　</strong>求浮力时先把吨换成千克。由河驶入密度较大的海水后，排开水的体积会减小。</p>
+<p class="example"><strong>例题　</strong>一艘船排水量为 800 t，满载漂浮时，取 <i>g</i> = 10 N/kg，浮力为 <b>8.0 × 10<sup>6</sup> N</b>。</p>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+<section class="chapter" id="chapter-10" aria-labelledby="heading-10"><div class="chapter-head"><h2 id="heading-10"><span class="number">10</span>从粒子到宇宙</h2><p>微观尺度用纳米等单位，星际距离常用光年。</p></div>
+<article class="card" id="universe">
+<div class="card-heading"><h3>光年与数量级换算</h3><span class="badge derived">常用推导</span></div>
+<div class="formula">1 光年 ≈ 9.46 × 10<sup>15</sup> m　　1 nm = 10<sup>−9</sup> m</div>
+<p class="line"><strong>怎么理解　</strong>1 光年是真空中的光在 1 年内走过的路程，所以它是长度单位。可用 <i>s</i> = <i>c</i><i>t</i> 计算，其中 1 年约为 3.156 × 10<sup>7</sup> s。nm 是纳米。</p>
+<p class="line"><strong>什么时候用　</strong>分子运动、两种电荷的相互作用、原子结构和太阳系组成等内容，主要用模型、图示和定性规律来理解。</p>
+<p class="example"><strong>例题　</strong>一颗恒星距地球 4.2 光年，它的光约走了 <b>4.2 年</b>才到达地球，这段路程约为 <b>4.0 × 10<sup>16</sup> m</b>。</p>
+</article>
+<a class="back" href="#contents">↑ 返回目录</a></section>
+
+<section class="panel" id="units" aria-labelledby="units-title">
+  <h2 id="units-title">常用单位换算</h2>
+  <table>
+    <thead><tr><th scope="col">物理量</th><th scope="col">换算关系</th></tr></thead>
+    <tbody>
+      <tr><td>长度</td><td>1 km = 10³ m，1 cm = 10<sup>−2</sup> m，1 mm = 10<sup>−3</sup> m</td></tr>
+      <tr><td>面积</td><td>1 dm² = 10<sup>−2</sup> m²，1 cm² = 10<sup>−4</sup> m²</td></tr>
+      <tr><td>体积</td><td>1 L = 1 dm³ = 10<sup>−3</sup> m³，1 mL = 1 cm³ = 10<sup>−6</sup> m³</td></tr>
+      <tr><td>时间</td><td>1 h = 60 min = 3 600 s，1 min = 60 s</td></tr>
+      <tr><td>质量</td><td>1 t = 10³ kg，1 kg = 10³ g，1 g = 10³ mg</td></tr>
+      <tr><td>速度与密度</td><td>1 m/s = 3.6 km/h，1 g/cm³ = 10³ kg/m³</td></tr>
+      <tr><td>力与压强</td><td>1 N/kg 是 <i>g</i> 的常用单位，1 Pa = 1 N/m²，1 kPa = 10³ Pa</td></tr>
+    </tbody>
+  </table>
+  <p>换面积和体积时，要把长度的换算倍数分别平方和立方。例如 1 cm² = (0.01 m)² = 0.0001 m²。</p>
+</section>
+<section class="panel" id="practice" aria-labelledby="practice-title">
+  <h2 id="practice-title">自测 6 题</h2>
+  <p>先写出所用公式，再点开题目核对。取 <i>g</i> = 10 N/kg，水的密度取 1.0 × 10³ kg/m³。</p>
+  <details><summary>1　声呐发出脉冲后 0.8 s 收到海底回波，水中声速为 1 500 m/s。海有多深？</summary><p>用回声测距。0.8 s 是往返时间，深度 = 1 500 × 0.8 ÷ 2 = <b>600 m</b>。</p></details>
+  <details><summary>2　物体原在镜前 2 m 处，向镜子靠近 0.5 m 后，它和像相距多远？</summary><p>物距镜面变为 1.5 m，像也距镜面 1.5 m，两者相距 <b>3 m</b>。</p></details>
+  <details><summary>3　前 60 m 用 10 s，中途休息 5 s，后 40 m 用 5 s。全程平均速度是多少？</summary><p>总路程 100 m，总时间 10 + 5 + 5 = 20 s，平均速度为 <b>5 m/s</b>。</p></details>
+  <details><summary>4　某物块体积为 80 cm³，质量为 216 g。求密度并换成 kg/m³。</summary><p>密度 = 216 ÷ 80 = 2.7 g/cm³ = <b>2.7 × 10³ kg/m³</b>。</p></details>
+  <details><summary>5　质量为 2 kg 的物块静放在桌上，接触面积为 50 cm²。求物块对桌面的压强。</summary><p>物块在竖直方向只受重力和支持力时，对桌面的压力大小为 2 × 10 = 20 N。50 cm² = 0.005 m²，压强 = 20 ÷ 0.005 = <b>4.0 × 10³ Pa</b>。</p></details>
+  <details><summary>6　物块完全浸没在水中，排开 300 cm³ 的水。物块重 4 N，求浮力并判断松手时的运动趋势。</summary><p>排开水的体积为 3.0 × 10<sup>−4</sup> m³，浮力 = 1.0 × 10³ × 10 × 3.0 × 10<sup>−4</sup> = <b>3.0 N</b>。刚松手时，浮力小于重力，物块开始<b>下沉</b>。</p></details>
+</section>
+<footer class="panel sources">
+  <h2>教材版本与查阅</h2>
+  <p>章节顺序采用按 2022 年版课标修订的苏科版八年级上、下册。旧版中“物态变化”和“从粒子到宇宙”的章次不同，翻书时可按章名查找。“常用推导”用于理解和做题，例题为本讲义编写。</p>
+  <ul>
+    <li><a href="https://www.moe.gov.cn/srcsite/a26/s8001/202408/W020240805496325238752.pdf">教育部 2024 年义务教育国家课程教学用书目录</a></li>
+    <li><a href="https://www.dzkbw.org/book/6724.html">苏科版八年级上册目录（2024 秋版）</a></li>
+    <li><a href="https://www.dzkbw.org/book/6725.html">苏科版八年级下册目录（2026 春版）</a></li>
+  </ul>
+</footer>
+
+</main>
+<script>
+const printButton = document.getElementById('print');
+printButton.hidden = false;
+printButton.addEventListener('click', () => window.print());
+</script>
+</body>
+</html>
